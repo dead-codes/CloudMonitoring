@@ -1,0 +1,22 @@
+server.port=8090
+#spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+spring.datasource.url=jdbc:mysql://cloudmonitoring.caec6rjyfhfm.us-east-1.rds.amazonaws.com:3306/CloudMonitoring?useSSL=false
+spring.datasource.username=root
+spring.datasource.password=Fsoft12345
+spring.datasource.tomcat.max-wait=20000
+spring.datasource.tomcat.max-active=50
+spring.datasource.tomcat.max-idle=20
+spring.datasource.tomcat.min-idle=15
+# Keep the connection alive if idle for a long time (needed in production)
+spring.datasource.testWhileIdle=true
+spring.datasource.validationQuery=SELECT 1
+# Naming strategy
+spring.jpa.hibernate.naming-strategy=org.hibernate.cfg.ImprovedNamingStrategy
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+spring.jpa.properties.hibernate.id.new_generator_mappings=false
+spring.jpa.properties.hibernate.format_sql=true
+logging.level.org.hibernate.SQL=DEBUG
+logging.level.org.hibernate.type.descriptor.sql.BasicBinder=TRACE 
+# Hibernate ddl auto (create, create-drop, validate, update)
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.current_session_context_class=org.springframework.orm.hibernate4.SpringSessionContext
